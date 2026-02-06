@@ -1,11 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="hatsune-miku-3840x2160-24858.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Name | ML & AI Developer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+                        color: #22d3ee;
+            background-image: url('https://images.pexels.com/photos/52608/pexels-photo-52608.jpeg');
+        background-repeat: no-repeat;
+        padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+        }
+
+        nav h2 {
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav span {
+            color: #22d3ee;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #22d3ee;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li a:hover {
+            color: #22d3ee;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 0 10%;
+        }
+
+        .hero-box {
+            max-width: 900px;
+            padding: 50px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #22d3ee;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #d1d5db;
+            margin-bottom: 30px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .primary {
+            background: #22d3ee;
+            color: #020617;
+        }
+
+        .primary:hover {
+            background: #06b6d4;
+        }
+
+        .secondary {
+            border: 2px solid #22d3ee;
+            color: #22d3ee;
+        }
+
+        .secondary:hover {
+            background: #22d3ee;
+            color: #020617;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #22d3ee;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            padding: 30px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.4);
+            color: #cbd5f5;
+        }
+        body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+}
+.center-img {
+  display: block;
+  margin: 30px auto;
+}
+
+    </style>
 </head>
 <body>
-    <h1>welcome to mysite</h1>
+    <video class="bg-video" autoplay muted loop playsinline>
+    <source src="live.mp4.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <img class="center-img"
+     src="https://cdn.magicdecor.in/com/2023/10/20180035/Creative-Anime-Girl-and-Cat-Wallpaper-for-Wall-M.jpg"
+     alt=""
+     height="300"
+     width="500">
+    <!-- NAVBAR -->
+    <nav>
+        <h1> MY <span> WEBSITE </span></h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero-box">
+            <h1>Hi, I'm <span> ABHINAV </span></h1>
+            <p>
+                BCA Graduate & Fresher passionate about
+                Machine Learning, Artificial Intelligence
+                and Cloud Computing using Google Cloud Platform.
+            </p>
+            <div class="buttons">
+                <a href="#projects" class="primary">My Projects</a>
+                <a href="#" class="secondary">Download Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a BCA graduate and enthusiastic fresher with hands-on experience in
+            Machine Learning and AI projects. I have deployed applications on Google
+            Cloud Platform and enjoy learning new technologies and solving real-world problems.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+            <div class="card">Python</div>
+            <div class="card">Machine Learning</div>
+            <div class="card">Artificial Intelligence</div>
+            <div class="card">Google Cloud Platform (GCP)</div>
+            <div class="card">Data Visualization</div>
+            <div class="card">HTML / CSS</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>ML Prediction System</h3>
+                <p>
+                    Built and trained ML models using Python and Scikit-learn
+                    to solve real-world prediction problems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>AI Smart Application</h3>
+                <p>
+                    Developed an AI-powered system focused on automation
+                    and intelligent decision making.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>GCP Cloud Deployment</h3>
+                <p>
+                    Deployed ML models on Google Cloud Platform
+                    ensuring scalability and performance.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Your Name | BCA Graduate | ML & AI Fresher</p>
+    </footer>
+
 </body>
 </html>
+
